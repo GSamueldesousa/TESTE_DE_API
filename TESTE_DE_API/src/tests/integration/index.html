@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Swagger UI</title>
+  <link rel="stylesheet" href="https://unpkg.com/swagger-ui-dist@latest/swagger-ui.css"> 
+  <script src="https://unpkg.com/swagger-ui-dist@latest/swagger-ui-bundle.js"></script> 
+</head>
+<body>
+  <div id="swagger-ui"></div>
+  <script>
+    const ui = SwaggerUIBundle({
+      url: 'swagger.yaml',
+      dom_id: '#swagger-ui',
+      presets: [
+        SwaggerUIBundle.presets.apis,
+        SwaggerUIStandalonePreset
+      ],
+      plugins: [
+        SwaggerUIBundle.plugins.DownloadUrlPlugin
+      ],
+      layout: "BaseLayout"
+    });
+  </script>
+</body>
+</html>
