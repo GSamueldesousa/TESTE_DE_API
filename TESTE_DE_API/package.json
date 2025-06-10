@@ -1,0 +1,25 @@
+{
+  "name": "teste_de_api",
+  "version": "1.0.0",
+  "description": "Projeto de teste automatizado de APIs para teste de QA.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "keywords": [
+    "api",
+    "test",
+    "automation",
+    "qa",
+    "playwright"
+  ],
+  "author": "Samuel",
+  "license": "MIT",
+  "directories": {
+    "doc": "docs",
+    "test": "src/tests"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.34.0"
+  }
+}
